@@ -5,7 +5,7 @@ import { Order, Product, Table, User } from '../../shared/models';
 
 @Injectable({ providedIn: 'root' })
 export class ApiService {
-  private base = '/api';
+  private base = 'https://api-pdv.gustavomello.shop/api';
 
   constructor(private http: HttpClient) {}
 
