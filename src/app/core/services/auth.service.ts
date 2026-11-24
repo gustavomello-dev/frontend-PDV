@@ -20,7 +20,7 @@ export class AuthService {
 
   login(email: string, password: string) {
     return this.http
-      .post<LoginResponse>('/api/auth/login', { email, password })
+      .post<LoginResponse>('https://api-pdv.gustavomello.shop/api/auth/login', { email, password })
       .pipe(
         tap(response => {
           localStorage.setItem(this.tokenKey, response.token);
